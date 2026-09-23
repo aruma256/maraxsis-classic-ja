@@ -10,4 +10,4 @@ Factorio 2.1 用の独立 Mod です。[Maraxsis Classic](https://github.com/kry
 
 ## リリース
 
-`info.json` のバージョンと一致する `v0.1.0` 形式のタグを push すると、GitHub Actions が配布用 ZIP を作成し、GitHub Release に添付します。
+`info.json` のバージョンと一致する `v<version>` 形式のタグを push すると、GitHub Actions が配布用 ZIP を作成し、GitHub Release に添付します。
