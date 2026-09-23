@@ -1,0 +1,12 @@
+{
+  "name": "maraxsis-classic-ja",
+  "version": "0.1.0",
+  "title": "Maraxsis Classic 日本語翻訳パッチ",
+  "author": "aruma256",
+  "factorio_version": "2.1",
+  "description": "Maraxsis Classic の日本語翻訳を更新する locale 専用 Mod。",
+  "dependencies": [
+    "base >= 2.1.20",
+    "maraxsis-classic >= 1.33.10"
+  ]
+}
