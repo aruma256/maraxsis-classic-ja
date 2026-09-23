@@ -6,20 +6,8 @@ Factorio 2.1 用の独立 Mod です。[Maraxsis Classic](https://github.com/kry
 
 ## インストール
 
-このディレクトリの `info.json`、`LICENSE`、`locale/ja/locale.cfg` を、`maraxsis-classic-ja_0.1.0` という名前のフォルダに入れて ZIP 化し、Factorio の `mods` フォルダに置きます。リポジトリのルートで作る場合:
+[Releases](https://github.com/aruma256/maraxsis-classic-ja/releases/latest) から `maraxsis-classic-ja_*.zip` をダウンロードし、解凍せずに Factorio の `mods` フォルダに置いてください。Maraxsis Classic 本体も必要です。マルチプレイでは全員が同じバージョンの本体と翻訳パッチを使用してください。
 
-```sh
-python3 - <<'PY'
-import json
-from pathlib import Path
-from zipfile import ZipFile
+## リリース
 
-info = json.loads(Path('info.json').read_text())
-name = f"{info['name']}_{info['version']}"
-with ZipFile(f'{name}.zip', 'w') as archive:
-    for path in ('info.json', 'LICENSE', 'locale/ja/locale.cfg'):
-        archive.write(path, f'{name}/{path}')
-PY
-```
-
-作成した `maraxsis-classic-ja_0.1.0.zip` を友人に共有できます。全員が同じバージョンの Maraxsis Classic と翻訳パッチを使用してください。
+`info.json` のバージョンと一致する `v0.1.0` 形式のタグを push すると、GitHub Actions が配布用 ZIP を作成し、GitHub Release に添付します。
